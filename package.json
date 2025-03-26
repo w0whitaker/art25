@@ -1,8 +1,8 @@
 {
-  "name": "eleventy-excellent",
+  "name": "williamwhitakerdotart",
   "version": "4.1.4",
-  "description": "Eleventy starter built around the workflow suggested by Andy Bell's buildexcellentwebsit.es.",
-  "author": "Lene Saile",
+  "description": "Paintings by William Whitaker.",
+  "author": "William Whitaker",
   "license": "ISC",
   "type": "module",
   "engines": {
@@ -22,7 +22,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/eleventy-excellent.git"
+    "url": "https://github.com/w0whitaker/art25"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
