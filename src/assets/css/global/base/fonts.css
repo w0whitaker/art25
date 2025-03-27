@@ -1,39 +1,51 @@
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
+  font-family: 'GeneralSans-Regular';
   src:
-    local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-regular.woff2') format('woff2');
+    url('/assets/fonts/general_sans/GeneralSans-Regular.woff2') format('woff2'),
+    url('/assets/fonts/general_sans/GeneralSans-Regular.woff') format('woff'),
+    url('/assets/fonts/general_sans/GeneralSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
+  font-family: 'GeneralSans-Italic';
+  src:
+    url('/assets/fonts/general_sans/GeneralSans-Italic.woff2') format('woff2'),
+    url('/assets/fonts/general_sans/GeneralSans-Italic.woff') format('woff'),
+    url('/assets/fonts/general_sans/GeneralSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
   font-style: italic;
-  font-display: swap;
-  font-weight: 400;
-  src:
-    local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-italic.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  font-style: normal;
-  font-display: swap;
+  font-family: 'GeneralSans-Bold';
+  src:
+    url('/assets/fonts/general_sans/GeneralSans-Bold.woff2') format('woff2'),
+    url('/assets/fonts/general_sans/GeneralSans-Bold.woff') format('woff'),
+    url('/assets/fonts/general_sans/GeneralSans-Bold.ttf') format('truetype');
   font-weight: 700;
-  src:
-    local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-bold.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
 }
 
+/*
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
 @font-face {
-  font-family: 'Redhat';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 900;
+  font-family: 'Author';
   src:
-    local(''),
-    url('/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2') format('woff2');
+    url('/assets/fonts/author/Author-Variable.woff2') format('woff2'),
+    url('/assets/fonts/author/Author-Variable.woff') format('woff'),
+    url('/assets/fonts/author/Author-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
 }
