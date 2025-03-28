@@ -3,5 +3,6 @@
   <slot name="headline"></slot>
   <div class="meta | cluster"><slot name="date"></slot><slot name="tag"></slot></div>
   <slot name="content"></slot>
+  <slot name="picture"></slot>
   <slot name="footer"></slot>
 </custom-card>
