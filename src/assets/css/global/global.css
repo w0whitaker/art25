@@ -16,3 +16,8 @@
 /* @import-glob 'tests/*.css' layer(test); */
 
 @import 'tailwindcss/utilities' layer(tailwindUtilities);
+
+/* style rules to be organized */
+.art-caption h1 {
+  font-size: var(--size-step-0);
+}
