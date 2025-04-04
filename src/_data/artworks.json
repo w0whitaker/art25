@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "title": "aop",
+      "date": "2021",
+      "medium": "acrylic on paper",
+      "path": "../assets/images/green-square.webp"
+    },
+    {
+      "title": "ooc",
+      "date": "2022",
+      "medium": "oil on canvas",
+      "path": "../assets/images/green-square.webp"
+    },
+    {
+      "title": "gop",
+      "date": "2023",
+      "medium": "graphite on paper",
+      "path": "../assets/images/green-square.webp"
+    }
+  ]
+}
