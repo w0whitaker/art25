@@ -7,18 +7,17 @@ pagination:
   alias: items
 permalink: 'art/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
 ---
-
 <div class="art-gallery">
   {% for item in items %}
-    <div class="art-item">
-      {% if item.path %}
-        <img src="{{ item.path }}" alt=" " eleventy:widths="100,200">
-      {% endif %}
-      {% if item.title %}
-        <p>{{ item.title }}</p>
-      {% else %}
-        <p>Untitled</p>
-      {% endif %}
-    </div>
+    {% set imgPath = item.path %}
+    <custom-card>
+      {% image imgPath,
+      " " %}
+      <h2 slot="headline">{{ item.title }}</h2>
+    </custom-card>
   {% endfor %}
 </div>
+
+{% css "local" %}
+{% include "css/custom-card.css" %}
+{% endcss %}
