@@ -23,7 +23,5 @@
 }
 
 .art-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: minmax(200px, auto);
+  --gutter: var(--space-l-xl);
 }
