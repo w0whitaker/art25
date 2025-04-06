@@ -21,7 +21,3 @@
 .art-caption h1 {
   font-size: var(--size-step-0);
 }
-
-.art-gallery {
-  --gutter: var(--space-l-xl);
-}
