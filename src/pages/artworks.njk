@@ -1,0 +1,26 @@
+---
+layout: base
+title: Artworks
+pagination:
+  data: artworks.items
+  size: 5
+  alias: items
+permalink: 'art/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+---
+<div class="wrapper">
+  <div class="grid">
+    {% for item in items %}
+      {% set imgPath = item.path %}
+      <a href="{{ item.title | slugify }}/index.html">
+        <custom-card clickable img-square>
+          {%- image imgPath," " -%}
+          <h2 slot="headline">{{ item.title }}</h2>
+        </custom-card>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% css "local" %}
+{% include "css/custom-card.css" %}
+{% endcss %}
