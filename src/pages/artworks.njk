@@ -11,11 +11,12 @@ permalink: 'art/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber 
   <div class="grid">
     {% for item in items %}
       {% set imgPath = item.path %}
-      <custom-card clickable img-square>
-        {% image imgPath,
-        " " %}
-        <h2 slot="headline">{{ item.title }}</h2>
-      </custom-card>
+      <a href="{{ item.title | slugify }}/index.html">
+        <custom-card clickable img-square>
+          {%- image imgPath," " -%}
+          <h2 slot="headline">{{ item.title }}</h2>
+        </custom-card>
+      </a>
     {% endfor %}
   </div>
 </div>

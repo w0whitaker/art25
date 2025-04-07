@@ -1,0 +1,13 @@
+---
+pagination:
+  data: artworks.items
+  size: 1
+  alias: items
+permalink: "art/{{ items.title | slugify }}/index.html"
+eleventyExcludeFromCollections: true
+layout: post.njk
+---
+<h1>{{ items.title }}</h1>
+{% set imgPath = items.path %}
+{% image imgPath,
+" " %}
