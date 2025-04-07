@@ -11,7 +11,7 @@ permalink: 'art/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber 
   <div class="grid">
     {% for item in items %}
       {% set imgPath = item.path %}
-      <custom-card img-square>
+      <custom-card clickable img-square>
         {% image imgPath,
         " " %}
         <h2 slot="headline">{{ item.title }}</h2>
