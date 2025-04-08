@@ -1,6 +1,24 @@
 export default {
   top: [
     {
+      text: 'paintings',
+      url: '/art'
+    },
+    {
+      text: 'works on paper',
+      url: '/art'
+    },
+    {
+      text: 'writing',
+      url: '/writing'
+    }
+  ],
+  bottom: [
+    {
+      text: 'home',
+      url: '/'
+    },
+    {
       text: 'art',
       url: '/art/'
     },
@@ -8,6 +26,5 @@ export default {
       text: 'Blog',
       url: '/blog/'
     }
-  ],
-  bottom: []
+  ]
 };
