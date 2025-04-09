@@ -1,0 +1,11 @@
+/* Navigation menu specific to the home page. */
+.home-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.home-nav a {
+  text-decoration: none;
+  font-weight: var(--font-bold);
+}
