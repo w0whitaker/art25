@@ -6,8 +6,8 @@
 
   <head>
     <!-- 1 charset/viewport -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <!-- 2 title -->
     <title>
@@ -18,7 +18,7 @@
       {%- endif -%}
     </title>
 
-    <base href="{{ page.url }}" />
+    <base href="{{ page.url }}"/>
 
     <!-- 3 synchronous js  -->
     {% include "head/js-inline.njk" %}
@@ -42,11 +42,13 @@
 
   <body class="{{ layout }}">
     {% set indicateActiveHome %}
-      {% if page.url == "/" %}
+    {% if page.url == "/" %}
         aria-current=page
       {% endif %}
     {% endset %}
-    {% include "partials/header.njk" %}
+    {%- if page.url != "/" -%}
+      {% include "partials/header.njk" %}
+    {%- endif -%}
 
     <main id="main" class="flow">{{ content | safe }}</main>
 
