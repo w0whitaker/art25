@@ -6,11 +6,12 @@ description: 'Portfolio site for William Whitaker.'
 ---
 
 <div class="wrapper">
-  <div class="region">
+  <div class="region flow" style="--flow-space:0.3ex;">
     <nav class="home-nav">
       {%- for item in navigation.top -%}
-        <a href="{{ item.url }}" class="font-display">{{ item.text }}</a>
+        <a href="{{ item.url }}" class="font-display text-step-4">{{ item.text }}</a>
       {%- endfor -%}
     </nav>
+    <img src="/assets/images/cover.webp" alt=" " eleventy:widths="400,600" loading="eager" decoding="sync">
   </div>
 </div>
