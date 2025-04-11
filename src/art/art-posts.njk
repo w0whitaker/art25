@@ -2,12 +2,10 @@
 pagination:
   data: artworks.items
   size: 1
-  alias: items
-permalink: "art/{{ items.title | slugify }}/index.html"
+  alias: item
+permalink: "art/{{ item.title | slugify }}/index.html"
 eleventyExcludeFromCollections: true
-layout: post.njk
+layout: artwork.njk
 ---
-<h1>{{ items.title }}</h1>
-{% set imgPath = items.path %}
-{% image imgPath,
-" " %}
+<h1>{{ item.title }}</h1>
+<img src="{{ item.path }}" alt=" " eleventy:widths="200,400">
