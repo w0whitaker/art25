@@ -2,9 +2,11 @@ const imgPath = 'assets/images';
 
 export default [
   {
-    category: 'painting'
+    category: 'paintings',
+    years: ['2020', '2021', '2022', '2023', '2024']
   },
   {
-    category: 'drawing'
+    category: 'works on paper',
+    years: ['2020', '2021', '2022', '2023', '2024']
   }
 ];

@@ -2,11 +2,11 @@ export default {
   top: [
     {
       text: 'paintings',
-      url: '/art'
+      url: '/paintings'
     },
     {
       text: 'works on paper',
-      url: '/art'
+      url: '/works-on-paper'
     },
     {
       text: 'writing',
