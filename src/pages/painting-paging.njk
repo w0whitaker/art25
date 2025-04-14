@@ -1,0 +1,11 @@
+---
+pagination:
+  data: artworks.paintings
+  size: 1
+  alias: painting
+eleventyExcludeFromCollections: true
+permalink: 'paintings/{{ painting.title }}/index.html'
+layout: page
+---
+<h1>{{ painting.title }}</h1>
+<img src="{{ painting.path }}" alt=" " eleventy:widths="100, 300">

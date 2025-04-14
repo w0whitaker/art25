@@ -1,0 +1,16 @@
+---
+layout: base
+permalink: /paintings.html
+title: 'Paintings'
+---
+
+<div class="wrapper">
+  <ul role="list">
+    {%- for painting in artworks.paintings -%}
+      <li>
+        <h2>{{ painting.title }}</h2>
+        <img src="{{ painting.path }}" alt="{{ painting.title }}" eleventy:widths="100">
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>
