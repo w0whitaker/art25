@@ -1,8 +1,7 @@
 ---
 layout: base
-schema: BlogPosting
 ---
-
 <div class="region">
-  {{ content | safe }}
+  <h1>{{ pagination.items[0].title }}</h1>
+  <img src="{{ pagination.items[0].path }}" alt="{{ pagination.items[0].title }}" eleventy:widths="200, 400">
 </div>
