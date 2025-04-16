@@ -2,15 +2,15 @@ export default {
   top: [
     {
       text: 'paintings',
-      url: '/paintings'
+      url: '/paintings/'
     },
     {
       text: 'works on paper',
-      url: '/works-on-paper'
+      url: '/works-on-paper/'
     },
     {
       text: 'writing',
-      url: '/writing'
+      url: '/writing/'
     }
   ],
   bottom: [

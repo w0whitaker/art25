@@ -1,12 +1,12 @@
 ---
 layout: base
-permalink: /paintings.html
-title: 'Paintings'
+permalink: /works-on-paper.html
+title: 'Works on paper'
 ---
 
 <div class="wrapper">
   <ul role="list">
-    {%- for item in artworks.paintings -%}
+    {%- for item in artworks.worksOnPaper -%}
       <li>
         <h2>{{ item.title }}</h2>
         <img src="{{ item.path }}" alt="{{ item.title }}" eleventy:widths="100">

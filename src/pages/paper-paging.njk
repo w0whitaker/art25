@@ -1,0 +1,11 @@
+---
+pagination:
+  data: artworks.worksOnPaper
+  size: 1
+  alias: paper
+eleventyExcludeFromCollections: true
+permalink: 'works-on-paper/{{ paper.title }}/index.html'
+layout: page
+---
+<h1>{{ paper.title }}</h1>
+<img src="{{ paper.path }}" alt=" " eleventy:widths="100, 300">
