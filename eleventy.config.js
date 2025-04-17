@@ -18,7 +18,13 @@ dotenv.config();
 import yaml from 'js-yaml';
 
 //  config import
-import {getAllPosts, showInSitemap, tagList} from './src/_config/collections.js';
+import {
+  getAllPosts,
+  showInSitemap,
+  tagList,
+  paintingsByYear,
+  paperByYear
+} from './src/_config/collections.js';
 import events from './src/_config/events.js';
 import filters from './src/_config/filters.js';
 import plugins from './src/_config/plugins.js';
@@ -38,6 +44,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('allPosts', getAllPosts);
   eleventyConfig.addCollection('showInSitemap', showInSitemap);
   eleventyConfig.addCollection('tagList', tagList);
+  eleventyConfig.addCollection('paintingsByYear', paintingsByYear);
+  eleventyConfig.addCollection('paperByYear', paperByYear);
 
   // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);

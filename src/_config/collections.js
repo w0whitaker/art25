@@ -17,3 +17,40 @@ export const tagList = collection => {
   });
   return Array.from(tagsSet).sort();
 };
+
+/** Create a collection for each 'year' of the artworks */
+// thank you @hamatti@hamatti.org!
+// https://hamatti.org/posts/list-blog-posts-grouped-by-year-with-eleventy/
+export const paintingsByYear = collection => {
+  const allPaintings = collection.getFilteredByTag('paintings');
+
+  const paintingYear = {};
+
+  allPaintings.forEach(item => {
+    if (!item.data.painting['year']) return;
+    const year = item.data.painting['year'];
+
+    if (!paintingYear[year]) {
+      paintingYear[year] = [];
+    }
+
+    paintingYear[year].push(item);
+  });
+  return paintingYear;
+};
+
+export const paperByYear = collection => {
+  const allPaper = collection.getFilteredByTag('works-on-paper');
+  const paperYear = {};
+
+  allPaper.forEach(item => {
+    if (!item.data.paper['year']) return;
+    const year = item.data.paper['year'];
+    if (!paperYear[year]) {
+      paperYear[year] = [];
+    }
+
+    paperYear[year].push(item);
+  });
+  return paperYear;
+};

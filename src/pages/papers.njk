@@ -5,15 +5,15 @@ title: 'Works on paper'
 ---
 
 <div class="wrapper">
-  <ul role="list">
-    {%- for item in artworks.worksOnPaper -%}
-      <li>
-        <h2>{{ item.title }}</h2>
-        <img src="{{ item.path }}" alt="{{ item.title }}" eleventy:widths="100">
-        <p>{{ item.medium }}</p>
-        <p>{{ item.year }}</p>
-        <p>{{ item.dims }}</p>
-      </li>
-    {%- endfor -%}
-  </ul>
+  {%- for year, items in collections.paperByYear | dictsort | reverse -%}
+    <h2>{{ year }}</h2>
+    <ul>
+      {%- for item in items | reverse -%}
+        <li>
+          <a href="{{ item.data.paper.path }}">{{ item.data.paper.title }}</a>
+          <img src="{{ item.data.paper.path }}" alt="{{ item.data.paper.title }}" eleventy:widths="100">
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endfor -%}
 </div>
