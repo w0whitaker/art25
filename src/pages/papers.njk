@@ -7,11 +7,11 @@ title: 'Works on paper'
 <div class="wrapper">
   {%- for year, items in collections.paperByYear | dictsort | reverse -%}
     <h2>{{ year }}</h2>
-    <ul>
+    <ul role="list" class="grid">
       {%- for item in items | reverse -%}
         <li>
+          <img src="{{ item.data.paper.path }}" alt="{{ item.data.paper.title }}">
           <a href="{{ item.data.paper.path }}">{{ item.data.paper.title }}</a>
-          <img src="{{ item.data.paper.path }}" alt="{{ item.data.paper.title }}" eleventy:widths="100">
         </li>
       {%- endfor -%}
     </ul>

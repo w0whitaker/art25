@@ -7,11 +7,11 @@ title: 'Paintings'
 <div class="wrapper">
   {%- for year, items in collections.paintingsByYear | dictsort | reverse -%}
     <h2>{{ year }}</h2>
-    <ul>
+    <ul role="list" class="grid">
       {%- for item in items | reverse -%}
         <li>
+          <img src="{{ item.data.painting.path }}" alt="{{ item.data.painting.title }}">
           <a href="{{ item.data.painting.path }}">{{ item.data.painting.title }}</a>
-          <img src="{{ item.data.painting.path }}" alt="{{ item.data.painting.title }}" eleventy:widths="100">
         </li>
       {%- endfor -%}
     </ul>

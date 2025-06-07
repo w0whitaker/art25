@@ -12,3 +12,12 @@ src/assets/images
 
 # secret data
 .env
+
+# for now, stop tracking artworks.js
+src/_data/artworks.js
+
+# design files
+design/
+
+# editor files
+*.code-workspace

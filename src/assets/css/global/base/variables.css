@@ -64,6 +64,12 @@
   --color-text: var(--color-neutral-100);
   --color-bg: var(--color-neutral-900);
 
+  --home-nav-decoration: var(--color-neutral-200);
+
+  --home-nav-one: var(--color-neutral-100);
+  --home-nav-two: var(--color-neutral-200);
+  --home-nav-three: var(--color-neutral-400);
+
   --color-primary: var(--color-neutral-900);
   --color-secondary: var(--color-blue-subdued);
   --color-tertiary: var(--color-gold-subdued);
