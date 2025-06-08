@@ -11,7 +11,7 @@ title: 'Works on paper'
       {%- for item in items | reverse -%}
         <li>
           <img src="{{ item.data.paper.path }}" alt="{{ item.data.paper.title }}">
-          <a href="{{ item.data.paper.path }}">{{ item.data.paper.title }}</a>
+          <a href="/works-on-paper/{{ item.data.paper.title }}/">{{ item.data.paper.title }}</a>
         </li>
       {%- endfor -%}
     </ul>

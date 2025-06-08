@@ -3,7 +3,6 @@ layout: base
 permalink: /paintings.html
 title: 'Paintings'
 ---
-
 <div class="wrapper">
   {%- for year, items in collections.paintingsByYear | dictsort | reverse -%}
     <h2>{{ year }}</h2>
@@ -11,7 +10,7 @@ title: 'Paintings'
       {%- for item in items | reverse -%}
         <li>
           <img src="{{ item.data.painting.path }}" alt="{{ item.data.painting.title }}">
-          <a href="{{ item.data.painting.path }}">{{ item.data.painting.title }}</a>
+          <a href="/paintings/{{ item.data.painting.title }}/">{{ item.data.painting.title }}</a>
         </li>
       {%- endfor -%}
     </ul>

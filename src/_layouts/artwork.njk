@@ -1,7 +1,17 @@
 ---
 layout: base
 ---
+{%- set artwork = pagination.items[0] %}
 <div class="region">
-  <h1>{{ pagination.items[0].title }}</h1>
-  <img src="{{ pagination.items[0].path }}" alt="{{ pagination.items[0].title }}" eleventy:widths="200, 400">
+  <img src="{{ artwork.path }}" alt="{{ artwork.title }}" eleventy:widths="600, 1200">
+  <h1>{{ artwork.title }}</h1>
+  {%- if artwork.year %}
+    <p>{{ artwork.year }}</p>
+  {% endif %}
+  {%- if artwork.medium %}
+    <p>{{ artwork.medium }}</p>
+  {% endif %}
+  {%- if artwork.dims %}
+    <p>{{ artwork.dims }}</p>
+  {% endif %}
 </div>
