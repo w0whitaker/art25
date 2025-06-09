@@ -34,7 +34,7 @@ is-land:not(:defined) .details .control {
   cursor: pointer;
   list-style: none;
   font-weight: var(--font-bold);
-  font-size: var(--size-step-1);
+  font-size: var(--text-size-1);
 }
 
 .details summary:hover,
@@ -48,7 +48,7 @@ is-land:not(:defined) .details .control {
   display: block;
   color: var(--color-primary);
   font-family: var(--font-mono);
-  font-size: var(--size-step-0);
+  font-size: var(--text-size-0);
   font-weight: var(--font-regular);
   line-height: 0.5;
   transform: scale(1.4);
@@ -62,14 +62,14 @@ is-land:not(:defined) .details .control {
 
 .details details > :is(h2, h3) {
   font-weight: var(--font-bold);
-  font-size: var(--size-step-0);
+  font-size: var(--text-size-0);
   border-block-end: var(--stroke);
   padding-block-end: var(--space-xs);
 }
 
 .details details > :is(h2, h3) {
   font-weight: var(--font-bold);
-  font-size: var(--size-step-0);
+  font-size: var(--text-size-0);
   border-block-end: var(--stroke);
   padding-block-end: var(--space-xs);
 }

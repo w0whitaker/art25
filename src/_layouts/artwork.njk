@@ -2,16 +2,22 @@
 layout: base
 ---
 {%- set artwork = pagination.items[0] %}
-<div class="region">
-  <img src="{{ artwork.path }}" alt="{{ artwork.title }}" eleventy:widths="600, 1200">
-  <h1>{{ artwork.title }}</h1>
-  {%- if artwork.year %}
-    <p>{{ artwork.year }}</p>
-  {% endif %}
-  {%- if artwork.medium %}
-    <p>{{ artwork.medium }}</p>
-  {% endif %}
-  {%- if artwork.dims %}
-    <p>{{ artwork.dims }}</p>
-  {% endif %}
+<div class="wrapper">
+  <div class="single-artwork">
+    <div class="sa-image">
+      <img src="{{ artwork.path }}" alt="{{ artwork.title }}" eleventy:widths="600, 1200">
+    </div>
+    <div class="sa-caption">
+      <h1>{{ artwork.title }}</h1>
+      {%- if artwork.year %}
+        <p>{{ artwork.year }}</p>
+      {% endif %}
+      {%- if artwork.medium %}
+        <p>{{ artwork.medium }}</p>
+      {% endif %}
+      {%- if artwork.dims %}
+        <p>{{ artwork.dims }}</p>
+      {% endif %}
+    </div>
+  </div>
 </div>

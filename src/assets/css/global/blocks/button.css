@@ -12,7 +12,7 @@
   --button-padding: var(--space-xs) var(--space-m);
   --button-font-family: var(--font-body);
   --button-font-weight: var(--font-regular);
-  --button-font-size: var(--size-step-0);
+  --button-font-size: var(--text-size-0);
   --button-text-transform: none;
   --button-tracking: normal;
 
@@ -95,7 +95,7 @@
 .button[data-small-button] {
   --button-border-width: 2px;
   --button-radius: var(--border-radius-small);
-  --button-font-size: var(--size-step-min-2);
+  --button-font-size: var(--text-size-min-2);
   --button-padding: var(--space-2xs) var(--space-s) var(--space-3xs) var(--space-s);
   --button-text-transform: uppercase;
   --button-tracking: var(--tracking-wide);

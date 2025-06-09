@@ -44,7 +44,7 @@ custom-card img {
 
 custom-card > .meta {
   grid-row: meta;
-  font-size: var(--size-step-min-1);
+  font-size: var(--text-size-min-1);
 }
 
 custom-card > p {
@@ -53,7 +53,7 @@ custom-card > p {
 
 custom-card > footer {
   grid-row: footer;
-  font-size: var(--size-step-min-2);
+  font-size: var(--text-size-min-2);
 }
 
 /* avoid overflow of long words */

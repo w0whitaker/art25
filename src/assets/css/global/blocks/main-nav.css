@@ -82,7 +82,7 @@
   font-weight: var(--font-bold);
   text-transform: uppercase;
   font-family: var(--font-display);
-  font-size: var(--size-step-min-1);
+  font-size: var(--text-size-min-1);
 }
 
 .mainnav svg {
@@ -122,7 +122,7 @@
 .mainnav [aria-current='page'],
 .mainnav [data-state='active'] {
   --nav-item-background: var(--color-primary);
-  --nav-item-text-color: var(--color-light);
+  --nav-item-text-color: var(--color-text);
   --nav-item-decoration-color: transparent;
 }
 
@@ -147,7 +147,7 @@
   .mainnav [aria-current='page'],
   .mainnav [data-state='active'] {
     --nav-item-background: transparent;
-    --nav-item-text-color: var(--color-primary);
+    --nav-item-text-color: var(--color-text);
     --nav-item-decoration-color: var(--color-primary);
   }
 }
@@ -170,7 +170,7 @@ assumes that the button doesn’t exist without JS, making the list the first ch
 .mainnav ul:first-child [aria-current='page'],
 .mainnav ul:first-child [data-state='active'] {
   --nav-item-background: transparent;
-  --nav-item-text-color: var(--color-primary);
+  --nav-item-text-color: var(--color-text);
   --nav-item-decoration-color: var(--color-primary);
 }
 

@@ -1,5 +1,5 @@
 .theme-switch h2 {
-  font-size: var(--size-step-min-1);
+  font-size: var(--text-size-min-1);
   font-family: var(--font-base);
 }
 

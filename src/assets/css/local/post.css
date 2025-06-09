@@ -1,13 +1,13 @@
 .post article h1 {
-  font-size: var(--size-step-6);
+  font-size: var(--text-size-6);
 }
 
 .post article h2 {
-  font-size: var(--size-step-3);
+  font-size: var(--text-size-3);
 }
 
 .post article h3 {
-  font-size: var(--size-step-2);
+  font-size: var(--text-size-2);
 }
 
 /* make featured image alwyays 16/9 */
@@ -20,12 +20,12 @@
 }
 
 .post date {
-  font-size: var(--size-step-1);
+  font-size: var(--text-size-1);
   color: var(--color-text-light);
 }
 
 .post .credit {
-  font-size: var(--size-step-min-1);
+  font-size: var(--text-size-min-1);
   color: var(--color-text-accent);
   background-color: var(--color-bg);
   padding: var(--space-xs) var(--space-s);
@@ -35,5 +35,5 @@
 }
 
 .post .meta {
-  font-size: var(--size-step-min-1);
+  font-size: var(--text-size-min-1);
 }

@@ -98,7 +98,7 @@ export default {
         {key: 'colors', prefix: 'color'},
         {key: 'borderRadius', prefix: 'border-radius'},
         {key: 'spacing', prefix: 'space'},
-        {key: 'fontSize', prefix: 'size'},
+        {key: 'fontSize', prefix: 'text-size'},
         {key: 'lineHeight', prefix: 'leading'},
         {key: 'fontFamily', prefix: 'font'},
         {key: 'fontWeight', prefix: 'font'}

@@ -4,7 +4,7 @@
 }
 
 .site-footer details {
-  font-size: var(--size-step-min-1);
+  font-size: var(--text-size-min-1);
 }
 
 /* increase tab size */

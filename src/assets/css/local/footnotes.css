@@ -1,9 +1,9 @@
 .footnotes {
-  font-size: var(--size-step-min-1);
+  font-size: var(--text-size-min-1);
 }
 
 .footnote-ref {
-  font-size: var(--size-step-min-2);
+  font-size: var(--text-size-min-2);
   vertical-align: super;
   margin-inline-start: 0.1ch;
   color: var(--color-text-accent);

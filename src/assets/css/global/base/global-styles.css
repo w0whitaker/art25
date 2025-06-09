@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--font-base);
-  font-size: var(--size-step-0);
+  font-size: var(--text-size-0);
   font-weight: var(--font-regular);
   font-size-adjust: from-font;
   line-height: var(--leading-standard);
@@ -37,21 +37,21 @@ h3 {
 }
 
 h1 {
-  font-size: var(--size-step-6);
+  font-size: var(--text-size-6);
 }
 
 h2 {
-  font-size: var(--size-step-4);
+  font-size: var(--text-size-4);
 }
 
 h3 {
-  font-size: var(--size-step-2);
+  font-size: var(--text-size-2);
 }
 
 blockquote {
   padding: var(--space-m-l);
   border-inline-start: 0.5rem solid var(--color-primary);
-  font-size: var(--size-step-2);
+  font-size: var(--text-size-2);
 }
 
 blockquote > * + * {
@@ -61,7 +61,7 @@ blockquote > * + * {
 blockquote :last-child {
   font-family: var(--font-base);
   font-style: normal;
-  font-size: var(--size-step-1);
+  font-size: var(--text-size-1);
 }
 
 input,
@@ -91,7 +91,7 @@ hr {
 
 figcaption {
   margin-block-start: var(--space-s);
-  font-size: var(--size-step-min-1);
+  font-size: var(--text-size-min-1);
   text-align: center;
   padding-block-end: var(--space-xs);
 }

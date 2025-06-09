@@ -3,10 +3,10 @@
     display: flex;
     align-items: flex-start;
     gap: var(--space-xs);
-    font-size: var(--size-step-min-1);
+    font-size: var(--text-size-min-1);
   }
   custom-peertube-link svg {
-    font-size: var(--size-step-0);
+    font-size: var(--text-size-0);
   }
 </style>
 

@@ -1,0 +1,49 @@
+.single-artwork {
+  max-inline-size: 50rem;
+  display: grid;
+  grid-template-columns: 1fr minmax(350px, auto);
+  gap: var(--space-s);
+  container-type: inline-size;
+  margin-block-start: 1lh;
+  margin-block-end: 0.5lh;
+}
+
+.sa-caption {
+  line-height: var(--leading-flat);
+}
+
+.sa-caption h1 {
+  font-size: var(--text-size-4);
+}
+
+@container (max-width: 500px) {
+  .single-artwork {
+    grid-template-columns: 1fr;
+  }
+
+  .single-artwork > * {
+    padding-inline: 0;
+  }
+
+  .sa-caption h1 {
+    font-size: var(--text-size-3);
+  }
+}
+
+@container (min-width: 800px) {
+  .single-artwork > * {
+    padding-inline-start: var(--space-xs);
+  }
+
+  .sa-caption {
+    align-self: self-end;
+    font-size: var(--text-size-min-1);
+  }
+}
+
+/* For browsers where container queries are not supported */
+@media (max-width: 500px) {
+  .single-artwork {
+    grid-template-columns: 1fr;
+  }
+}

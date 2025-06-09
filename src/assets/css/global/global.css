@@ -19,5 +19,5 @@
 
 /* style rules to be organized */
 .art-caption h1 {
-  font-size: var(--size-step-0);
+  font-size: var(--text-size-0);
 }
