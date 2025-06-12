@@ -1,0 +1,4 @@
+.site-header {
+  padding-block-start: var(--space-s);
+  border-block-end: 2px solid var(--color-neutral-900);
+}
