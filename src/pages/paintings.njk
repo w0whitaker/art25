@@ -9,8 +9,10 @@ title: 'Paintings'
     <ul role="list" class="grid">
       {%- for item in items | reverse -%}
         <li>
-          <img src="{{ item.data.painting.path }}" alt="{{ item.data.painting.title }}">
-          <a href="/paintings/{{ item.data.painting.title }}/">{{ item.data.painting.title }}</a>
+          <a href="/paintings/{{ item.data.painting.title }}/">
+            <img src="{{ item.data.painting.path }}" alt="{{ item.data.painting.title }}">
+            <span>{{ item.data.painting.title }}</span>
+          </a>
         </li>
       {%- endfor -%}
     </ul>
