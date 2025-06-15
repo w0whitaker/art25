@@ -6,7 +6,7 @@ export default {
     {
       title: 'ULG2094',
       year: 2020,
-      path: `${imgPath}/UlG2094.webp`,
+      path: `${imgPath}/ULG2094.webp`,
       medium: 'acrylic on paper',
       dims: `${sizeOne}`
     },
