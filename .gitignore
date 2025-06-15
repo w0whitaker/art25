@@ -3,18 +3,12 @@ node_modules
 
 # generated files
 dist
-src/_includes/css
-src/_includes/scripts
-src/assets/images
 
 # cache
 .cache
 
 # secret data
 .env
-
-# for now, stop tracking artworks.js
-src/_data/artworks.js
 
 # design files
 design/
