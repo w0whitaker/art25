@@ -1,9 +1,9 @@
 .mainnav a {
-  color: #0934cd;
+  color: var(--color-text);
 }
 
 .mainnav a[data-state='active'] {
-  color: var(--color-neutral-900);
+  color: var(--color-text);
   font-size: var(--text-size-2);
   font-weight: 600;
   text-decoration: none;
