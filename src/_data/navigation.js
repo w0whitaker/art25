@@ -17,14 +17,6 @@ export default {
     {
       text: 'home',
       url: '/'
-    },
-    {
-      text: 'art',
-      url: '/art/'
-    },
-    {
-      text: 'Blog',
-      url: '/blog/'
     }
   ]
 };
