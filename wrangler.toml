@@ -1,0 +1,13 @@
+name = "art25"
+
+[vars]
+URL = "https://williamwhitaker.art"
+NAME = "William Whitaker"
+EMAIL = "william@williamwhitaker.art"
+MASTO = "@commendable@mastodon.social"
+DEV_SITE = "https://williamwhitaker.dev"
+
+compatibility_date = "2025-06-24"
+
+[assets]
+directory = "./dist"
